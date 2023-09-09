@@ -1,0 +1,11 @@
+DELIMITER //
+
+CREATE EVENT delete_old_access_records_event
+ON SCHEDULE EVERY 1 DAY
+STARTS NOW()
+DO
+BEGIN
+    DELETE FROM access WHERE timestamp_OUT < DATE_SUB(NOW(), INTERVAL 5 YEAR);
+END //
+
+DELIMITER ;
