@@ -47,9 +47,7 @@ python main.py
 - **Access Logs**: Filter through logs using user ID, specific date range, or specific time range.
 - **Change Password**: Navigate to this option to change the system access password.
 
-# License
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE.txt) file for details.
 
 
 
