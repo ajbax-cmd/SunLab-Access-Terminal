@@ -404,7 +404,7 @@ def search(con):
            # 3rd case: search by only time
             elif(not values[0] and not values[1] and not values[2] and values[3] and values[4]):
                 if(validate_Times(values[3], values[4])):
-                    cursor.execute("SELECT * FROM users NATURAL JOIN access where cast(timestamp_In as time) >= %s or cast(timestamp_Out as time) <= %s", (values[3], values[4]))
+                    cursor.execute("SELECT * FROM users NATURAL JOIN access where cast(timestamp_In as time) >= %s and cast(timestamp_Out as time) <= %s", (values[3], values[4]))
                     display_table(cursor)
                 else:
                     sg.popup("Times must be in HH:MM format!")
