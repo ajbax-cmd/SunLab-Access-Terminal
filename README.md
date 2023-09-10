@@ -1,6 +1,6 @@
 # Sun Lab Access Terminal
 
-A class assignment for CMPSC 487W that uses Python GUI application that interfaces with a MySQL database to manage user access in the Sun Lab.
+A class assignment for CMPSC 487W that uses a Python GUI application that interfaces with a MySQL database to manage user access in the Sun Lab.
 
 ## Features
 
